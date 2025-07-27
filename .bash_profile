@@ -1,7 +1,8 @@
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Add Alacritty to Path
+export PATH="$PATH:/Applications/Alacritty.app/Contents/MacOS/alacritty"
 
 # Git branch in prompt
 parse_git_branch() {

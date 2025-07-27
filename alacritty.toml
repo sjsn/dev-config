@@ -1,0 +1,145 @@
+[scrolling]
+history = 10_000
+multiplier = 3
+
+[terminal]
+shell = { program = "/bin/bash", args = ["-login"] }
+
+[font]
+  [font.normal]
+  family = "Dank Mono"
+  style = "Regular"
+
+  [font.bold]
+  family = "Dank Mono"
+  style = "Bold"
+
+  [font.italic]
+  family = "Dank Mono"
+  style = "Italic"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#eff0eb"
+
+[colors.normal]
+black = "#282a36"
+red = "#ff5c57"
+green = "#5af78e"
+yellow = "#f3f99d"
+blue = "#57c7ff"
+magenta = "#ff6ac1"
+cyan = "#9aedfe"
+white = "#f1f1f0"
+
+[colors.bright]
+black = "#686868"
+red = "#ff5c57"
+green = "#5af78e"
+yellow = "#f3f99d"
+blue = "#57c7ff"
+magenta = "#ff6ac1"
+cyan = "#9aedfe"
+white = "#f1f1f0"
+
+[cursor]
+style = "Beam"
+
+[keyboard]
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Command"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Command"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "+"
+mods = "Command"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Command"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Command"
+action = "ClearHistory"
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Command"
+chars = "\f"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Command"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Command"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "H"
+mods = "Command"
+action = "Hide"
+
+[[keyboard.bindings]]
+key = "M"
+mods = "Command"
+action = "Minimize"
+
+[[keyboard.bindings]]
+key = "Q"
+mods = "Command"
+action = "Quit"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Command"
+action = "Quit"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Command|Control"
+action = "ToggleFullscreen"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Alt"
+chars = "\u001b[1;5A"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Alt"
+chars = "\u001b[1;5B"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001bb"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u001bf"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Shift"
+action = "ScrollPageUp"
+mode = "~Alt"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Shift"
+action = "ScrollPageDown"
+mode = "~Alt"
